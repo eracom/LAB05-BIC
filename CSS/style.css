@@ -1,0 +1,232 @@
+/* - TYPOGRAPHIE - - - - - - - - - - - */
+
+@import url("https://use.typekit.net/pzp7xzf.css");
+
+body {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  transition: 1s ease-in-out;
+  transform: translateY(210px);
+}
+
+.col {
+  transition: 1s ease-in-out;
+}
+
+/* Tailles de caracatere */
+p {
+  font-size: 9pt;
+}
+
+h6 {
+  font-size: 13pt;
+}
+h5 {
+  font-size: 11pt;
+  font-weight: 500;
+  line-height: 18px;
+}
+h4 {
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: 15px;
+}
+h3 {
+  font-size: 14pt;
+  font-weight: 800;
+}
+h2 {
+  font-size: 22pt;
+  font-weight: 800;
+  height: max-content;
+  line-height: 25px;
+}
+h1 {
+  font-size: 3rem;
+}
+
+/* Interligne */
+p {
+  line-height: 12px;
+}
+
+/* - COULEUR - - - - - - - - - - - - - */
+
+/*
+	Hex	#004aff
+	RGB	0, 74, 255
+	HSB	223°, 100%, 100%
+	CMYK 100, 71, 0, 0
+*/
+
+/*
+	Hex	#e9eaeb
+	RGB	233, 234, 235
+	HSB	210°, 0.9, 92.2
+	CMYK 1, 0, 0, 8
+*/
+
+:root {
+  --main-color: #004aff;
+  --Second-color: #e9eaeb;
+  --Black-color: #000000;
+  --White-color: #ffffff;
+}
+
+/* - NAVBAR - - - - - - - - - - - - */
+
+.Bouton {
+  border-left: 5px solid var(--White-color);
+  color: var(--White-color);
+  cursor: pointer;
+}
+
+.Bouton:hover {
+  color: var(--Black-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.BackgrounBouton {
+  background-color: var(--Second-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* - HOMEPAGE- - - - - - - - - - - - */
+
+.Pellicule {
+  background-color: var(--Black-color);
+  color: var(--White-color);
+  transition: 1s ease-in-out;
+}
+
+.Pellicule h2 {
+  transition: opacity 1s ease-in-out;
+}
+
+/* - SHOP - - - - - - - - - - - - - */
+/* - Baniere - SHOP */
+
+.ShopBanniere {
+  color: var(--White-color);
+  border-top: 0.5px solid var(--Black-color);
+  transition: transform 0.4s ease-in-out;
+}
+
+.boutonBuy {
+  background-color: var(--main-color);
+  color: var(--Second-color);
+  cursor: pointer;
+}
+
+.BackBlur {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: #00000054;
+}
+
+/* - Panier - SHOP */
+
+.BoxAchat {
+  transition: left 0.4s ease-in-out;
+  border-top: 0.5px solid var(--Black-color);
+}
+
+.boutonSelect {
+  background-color: var(--main-color);
+  color: var(--Second-color);
+}
+
+.ImageBoxAchat {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 3, 255, 0.2) 100%
+  );
+}
+
+.InfoBoxAchat {
+  background-color: var(--Second-color);
+}
+
+.FlecheBouton {
+  cursor: pointer;
+}
+
+/* - Panier - LayoutBox - SHOP */
+
+.InfoBoxAchat .Box3 {
+  border-bottom: 1px solid var(--Black-color);
+}
+
+/* - BIC - LEBIC- - - - - - - - - - - - */
+
+.InfoBox1 {
+  grid-column: 1/4;
+}
+
+.InfoBox2 {
+  grid-column: 4/8;
+}
+
+.BoxBic {
+  color: var(--White-color);
+  display: grid;
+  grid-template-columns: minmax(100px, 250px) minmax(100px, 250px) 1fr;
+  grid-template-rows: 100px 450px;
+}
+
+.BoxBic .Txt {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: flex-start;
+}
+
+.BoxBic .Img {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-color: var(--Second-color);
+}
+
+.BoxBic .Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.BigBox {
+  grid-column: 1/8;
+  height: 860px;
+  margin-top: 180px;
+}
+
+.BigBox .Img {
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BigBox .Img img {
+  width: auto;
+  height: 100%;
+}
+
+/* - Spéciaux - - - - - - - - - - - - - */
+
+.TextInformatif {
+  transition: opacity 1s ease-in-out;
+  cursor: pointer;
+}
