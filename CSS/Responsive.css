@@ -30,7 +30,7 @@
     color: var(--Second-color);
   }
 
-  .TitreExplicatif{
+  .TitreExplicatif {
     text-align: center;
   }
 
@@ -93,24 +93,20 @@
     z-index: -10;
   }
 
-
   .Bouton {
     color: var(--Black-color);
     transition: color 0.3s ease-in-out;
     color: var(--Second-color);
   }
-  
-  .BoxBic{
+
+  .BoxBic {
     grid-column: 1/8;
   }
-  .img{
+  .img {
     height: 100%;
     width: auto;
   }
-  
 }
-
-
 
 @media only screen and (min-width: 900px) {
   .Mobile {
